@@ -18,11 +18,11 @@ email: pomfy113@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   The journey of a "lazy but smart" kid who blindly
   stumbled through life until he found something worth
-  the time and effort
+  the time and effort.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: niconiconice
+github_username:  pomfy113
 
 # Build settings
 markdown: kramdown
