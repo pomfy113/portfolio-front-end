@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
 
-class Jumbotron extends Component {
+import Jumbotron from './Components/Jumbotron';
+import Contact from './Components/Contact'
+
+import './App.css'
+
+export default class App extends Component {
   render() {
     return (
-      <div id='Jumbotron'>
-          <div className='project'>
-              <img src='test.png'/>
-          </div>
-
-          <div className='project'>
-              <img src='test.png'/>
-          </div>
-
-          <div className='project'>
-              <img src='test.png'/>
-          </div>
+      <div id='App'>
+          <Contact/>
+          <Jumbotron/>
       </div>
     );
   }
 }
-
-export default Jumbotron;

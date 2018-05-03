@@ -1,0 +1,16 @@
+#Contact{
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+}
+
+#Contact p{
+    text-align: right;
+    margin: 1px;
+    font-size: 10px;
+}
+
+#Contact p b{
+    color: grey
+}

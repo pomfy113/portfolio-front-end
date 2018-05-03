@@ -1,0 +1,37 @@
+#Jumbotron {
+    display: flex;
+    justify-content: center;
+    perspective: 1000px;
+    align-items: center;
+    padding-top: 200px;
+    width: 100%;
+}
+
+.project {
+    --width: 400px;
+    --distance: 100px;
+    position: absolute;
+    width: var(--width);
+    box-shadow: 2px 2px 5px black;
+}
+
+.project:nth-child(1) {
+    transform: rotateY(-50deg) translateZ(calc(var(--distance) * 1));
+    left: 0;
+}
+
+.project:nth-child(2) {
+    transform: rotateY(0deg) translateZ(calc(var(--distance) * 2));
+    z-index: 1;
+    left: calc(50% - (var(--width) / 2));
+}
+
+.project:nth-child(3) {
+    transform: rotateY(50deg) translateZ(calc(var(--distance) * 1));
+    right: 0;
+}
+
+
+.project img{
+    width: 400px;
+}

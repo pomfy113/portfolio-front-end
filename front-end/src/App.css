@@ -1,31 +1,4 @@
-#Jumbotron {
+#App{
     display: flex;
     justify-content: center;
-    perspective: 300px;
-}
-
-.project {
-    --width: 400px;
-    position: absolute;
-    width: var(--width)
-}
-
-.project:nth-child(1) {
-    transform: rotateY(-30deg);
-    left: 0;
-}
-
-.project:nth-child(2) {
-    transform: rotateY(0deg);
-    left: calc(50% - (var(--width) / 2));
-}
-
-.project:nth-child(3) {
-    transform: rotateY(30deg);
-    right: 0;
-}
-
-
-.project img{
-    width: 400px;
 }

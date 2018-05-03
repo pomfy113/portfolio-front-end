@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Jumbotron from './App';
 import registerServiceWorker from './registerServiceWorker';
+import App from './App.js'
 
-ReactDOM.render(<Jumbotron />, document.getElementById('root'));
+
+ReactDOM.render(<App/>, document.getElementById('root'));
 registerServiceWorker();
