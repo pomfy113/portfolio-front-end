@@ -1,5 +1,10 @@
-body {
-  margin: 0;
-  padding: 0px;
-  font-family: sans-serif;
+body, html, #root, #App{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0px;
+    font-family: sans-serif;
 }
