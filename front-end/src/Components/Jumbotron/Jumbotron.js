@@ -7,16 +7,28 @@ export default class Jumbotron extends Component {
       super(props);
       this.state = {
           rotate: 0,
+          index: [0, 1, 2, 1, 0]
       }
 
       this.ref = React.createRef();
   }
   leftRotate(){
       const newRot = this.state.rotate - 72;
-      // const index = Math.abs(this.state.index - 1) % 3;
+
+      const indexCopy = this.state.index.slice()
+      const newTail = indexCopy.pop()
+      indexCopy.unshift(newTail)
+
+      for(let i in indexCopy){
+          console.log(i)
+          this.ref.current.style.setProperty(`--z-${(i)}`, indexCopy[i])
+      }
+
+      console.log(indexCopy)
+
       this.ref.current.style.setProperty('--rotate', `${newRot}deg`)
 
-      this.setState({ rotate: newRot })
+      this.setState({ rotate: newRot, index: indexCopy})
   }
 
   render() {
