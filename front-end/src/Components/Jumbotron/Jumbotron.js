@@ -15,6 +15,7 @@ export default class Jumbotron extends Component {
       this.ref = React.createRef();
   }
   leftRotate(){
+      // Shift all numbers in the index
       const newRot = this.state.rotate - 72;
 
       const indexCopy = this.state.index.slice()

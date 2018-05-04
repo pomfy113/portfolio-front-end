@@ -1,0 +1,22 @@
+.project {
+    opacity: .5;
+}
+
+.project:hover {
+    opacity: 1;
+    transition: 200ms;
+}
+
+.project h1, .project h2{
+    margin: 5px;
+    text-align: center;
+}
+
+.project h1{
+    font-weight: 600;
+}
+
+.project h2{
+    font-size: 15px;
+    font-weight: 300;
+}
