@@ -7,19 +7,16 @@ export default class Jumbotron extends Component {
       super(props);
       this.state = {
           rotate: 0,
-          distance: 0,
       }
 
       this.ref = React.createRef();
   }
   leftRotate(){
       const newRot = this.state.rotate - 72;
-      const newDist = (Math.abs(newRot) * -6) % 600;
+      // const index = Math.abs(this.state.index - 1) % 3;
       this.ref.current.style.setProperty('--rotate', `${newRot}deg`)
-      console.log(newDist)
-      this.ref.current.style.setProperty('--distance', `${newDist}px`)
 
-      this.setState({ rotate: newRot, distance: newDist })
+      this.setState({ rotate: newRot })
   }
 
   render() {

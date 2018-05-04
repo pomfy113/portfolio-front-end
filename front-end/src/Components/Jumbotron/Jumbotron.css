@@ -2,7 +2,6 @@
     --width: 400px;
     --distance: 100px;
     --rotate: 0deg;
-    --distance: 0px;
 
     display: flex;
     justify-content: center;
@@ -14,6 +13,9 @@
 
 .project {
     position: absolute;
+    display: block;
+    transform-style: preserve-3d;
+
     width: var(--width);
     height: 500px;
     box-shadow: 2px 2px 5px black;
@@ -22,14 +24,13 @@
 }
 
 .project:nth-child(1) {
-    transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(400px) ;
+    transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(400px);
     background-color: red;
 }
 
 .project:nth-child(2) {
     transform: rotateY(calc(var(--rotate))) translateZ(400px) ;
     background-color: green;
-
 }
 
 .project:nth-child(3) {
@@ -41,12 +42,10 @@
 .project:nth-child(4) {
     transform: rotateY(calc(var(--rotate) + 144deg)) translateZ(400px) ;
     background-color: orange;
-
 }
 
 .project:nth-child(5) {
     transform: rotateY(calc(var(--rotate) - 144deg)) translateZ(400px) ;
-    /* left: calc(var(--distance)); */
     background-color: purple;
 }
 
