@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './Jumbotron.css';
 
+import Project from './Project'
+
 export default class Jumbotron extends Component {
 
   constructor(props){
@@ -44,6 +46,10 @@ export default class Jumbotron extends Component {
   }
 
   render() {
+    const projects = this.state.index.map((num, index) => {
+        return <Project index={index}/>
+    })
+
     return (
       <div id='Jumbotron' ref={this.ref}>
           <div id='buttons'>
@@ -52,25 +58,7 @@ export default class Jumbotron extends Component {
 
           </div>
           <div id='projects'>
-              <div className='project'>
-                  <h1>1</h1>
-              </div>
-
-              <div className='project'>
-                  <h1>2</h1>
-              </div>
-
-              <div className='project'>
-                  <h1>3</h1>
-              </div>
-
-              <div className='project'>
-                  <h1>4</h1>
-              </div>
-
-              <div className='project'>
-                  <h1>5</h1>
-              </div>
+              {projects}
         </div>
       </div>
     );

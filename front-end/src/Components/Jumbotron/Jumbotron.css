@@ -34,37 +34,32 @@
     height: 500px;
     box-shadow: 2px 2px 5px black;
     transition: 750ms;
-    opacity: 0.4;
+    background-color: #9545;
     color: white;
 }
 
 .project:nth-child(1) {
     transform: rotateY(calc(var(--rotate) - 144deg)) translateZ(var(--width)) ;
-    background-color: purple;
     z-index: var(--z-0);
 }
 
 .project:nth-child(2) {
     transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(var(--width));
-    background-color: red;
     z-index: var(--z-1);
 }
 
 .project:nth-child(3) {
     transform: rotateY(calc(var(--rotate))) translateZ(var(--width)) ;
-    background-color: green;
     z-index: var(--z-2);
 }
 
 .project:nth-child(4) {
     transform: rotateY(calc(var(--rotate) + 72deg)) translateZ(var(--width)) ;
-    background-color: blue;
     z-index: var(--z-3);
 }
 
 .project:nth-child(5) {
     transform: rotateY(calc(var(--rotate) + 144deg)) translateZ(var(--width)) ;
-    background-color: orange;
     z-index: var(--z-4);
 }
 
