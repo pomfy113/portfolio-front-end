@@ -15,13 +15,14 @@ export default class Jumbotron extends Component {
       }
 
       this.ref = React.createRef();
+      this.colors = ['#85F0E6', '#FFDF8A', '#C09AFF', '#94ED93', '#FF9B92'];
   }
 
   leftRotate(){
       // Shift all numbers in the index
       const newRot = this.state.rotate - 72;
       const newActive = this.state.active + 1
-
+      const adjustedActive = (newActive % 5 + 5) % 5
 
       const indexCopy = this.state.index.slice()
       const newTail = indexCopy.pop()
@@ -36,13 +37,15 @@ export default class Jumbotron extends Component {
       this.setState({
           rotate: newRot,
           index: indexCopy,
-          active: (newActive % 5 + 5) % 5
+          active: adjustedActive
       })
+      this.setBodyColor(adjustedActive);
   }
 
   rightRotate(){
       const newRot = this.state.rotate + 72;
       const newActive = this.state.active - 1
+      const adjustedActive = (newActive % 5 + 5) % 5
 
       const indexCopy = this.state.index.slice()
       const newTail = indexCopy.shift()
@@ -56,8 +59,13 @@ export default class Jumbotron extends Component {
       this.setState({
           rotate: newRot,
           index: indexCopy,
-          active: (newActive % 5 + 5) % 5
+          active: adjustedActive
       })
+      this.setBodyColor(adjustedActive);
+  }
+
+  setBodyColor(active){
+      document.body.style.backgroundColor = this.colors[active];
   }
 
   render() {

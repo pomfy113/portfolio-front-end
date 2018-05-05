@@ -6,12 +6,16 @@
 
     border: 1px solid lightgrey;
     border-radius: 20px;
-    padding: 5px;
+    padding: 0px 10px;
     margin: 10px;
     width: var(--width);
     height: 150px;
     z-index: 1;
     background-color: #fffa;
+}
+
+#Contact h1{
+    font-weight: 200;
 }
 
 #Contact p{

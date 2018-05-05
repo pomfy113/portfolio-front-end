@@ -4,4 +4,6 @@ body, html, #root, #App{
 
 body{
     font-family: 'Open Sans', sans-serif;
+    transition: 1000ms;
+    background-color: #85F0E6;
 }

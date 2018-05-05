@@ -39,29 +39,36 @@
     background-color: #954B;
     color: white;
 }
+/* this.colors is ['#85F0E6', '#FFDF8A', '#C09AFF', '#94ED93', '#FF9B92']; */
+/* Adjust sub colors by 4 numbers down */
 
 .tab:nth-child(1) {
     transform: rotateY(calc(var(--rotate))) translateZ(var(--width)) ;
+    background-color: #45B0F6BB;
     z-index: var(--z-2);
 }
 
 .tab:nth-child(2) {
     transform: rotateY(calc(var(--rotate) + 72deg)) translateZ(var(--width)) ;
+    background-color: #FFDF0ABB;
     z-index: var(--z-3);
 }
 
 .tab:nth-child(3) {
     transform: rotateY(calc(var(--rotate) + 144deg)) translateZ(var(--width)) ;
+    background-color: #C01AFFBB;
     z-index: var(--z-4);
 }
 
 .tab:nth-child(4) {
     transform: rotateY(calc(var(--rotate) - 144deg)) translateZ(var(--width)) ;
+    background-color: #54ED53BB;
     z-index: var(--z-0);
 }
 
 .tab:nth-child(5) {
     transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(var(--width));
+    background-color: #FF5B52BB;
     z-index: var(--z-1);
 }
 
@@ -76,7 +83,6 @@
 /* Rotate buttons */
 .rotate {
     display: none;
-    opacity: 0.0;
     position: absolute;
 
     top: 33%;
@@ -98,7 +104,6 @@
 
 .tab.active .rotate{
     display: block;
-    opacity: 1.0 !important;
 }
 
     .left-rot {

@@ -36,18 +36,19 @@ export class Tools extends Component {
           <div className={`tab tools ${this.props.active ? 'active' : 'inactive'}`}>
               <h1>Tools</h1>
               <table>
+                  <tbody>
                   <tr>
                       <th>Category</th>
                       <th>Tools</th>
                   </tr>
                   <tr>
+                      <td>Specialties</td>
+                      <td>Python, React, CSS3, debugging</td>
+                  </tr>
+                  <tr>
                       <td>Web Tech</td>
                       <td>Node.js, Express, REST, MVC/MVVC, UX Design & Testing,
                       Authentication (JWT, Bcrypt), Flask, AJAX</td>
-                  </tr>
-                  <tr>
-                      <td>Specialties</td>
-                      <td>Python, React, CSS3, debugging</td>
                   </tr>
                   <tr>
                       <td>Languages</td>
@@ -71,6 +72,7 @@ export class Tools extends Component {
                       <td>Object Oriented Programming, Data Structures, 3D Modeling & Animation,
                           Assembly Language</td>
                   </tr>
+                  </tbody>
               </table>
 
               <button className="left-rot rotate" onClick={() => this.props.rotLeft()}/>
