@@ -1,0 +1,28 @@
+
+
+.about {
+    white-space: pre-line;
+}
+
+.about *, .tools *{
+    text-shadow: 0px 0px 1px black;
+}
+
+.about h1, .tools h1{
+    font-size: 20px;
+}
+
+.about p{
+    font-size: 11px;
+}
+
+.tools table{
+    border-collapse: collapse;
+}
+
+.tools td, .tools th{
+    font-size: 12px;
+    padding: 5px;
+    border: 1px solid lightgrey;
+
+}

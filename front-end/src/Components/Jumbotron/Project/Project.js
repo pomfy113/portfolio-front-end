@@ -16,7 +16,7 @@ export default class Project extends Component {
       }
 
       return(
-          <div className={`project ${this.props.active ? 'active' : 'inactive'}`}>
+          <div className={`tab project ${this.props.active ? 'active' : 'inactive'}`}>
               <button className="left-rot rotate" onClick={() => this.props.rotLeft()}/>
               <button className="right-rot rotate" onClick={() => this.props.rotRight()}/>
 

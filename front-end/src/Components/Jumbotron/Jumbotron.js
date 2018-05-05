@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Jumbotron.css';
 
 import Project from './Project'
+import { About, Tools } from './Misc'
 
 export default class Jumbotron extends Component {
 
@@ -15,6 +16,7 @@ export default class Jumbotron extends Component {
 
       this.ref = React.createRef();
   }
+
   leftRotate(){
       // Shift all numbers in the index
       const newRot = this.state.rotate - 72;
@@ -59,20 +61,34 @@ export default class Jumbotron extends Component {
   }
 
   render() {
-    const projects = this.state.index.map((num, index) => {
-        return <Project
-            active={index === this.state.active}
-            index={index}
-            rotLeft={() => this.rightRotate()}
-            rotRight={() => this.leftRotate()}
-        />
-    })
+    let projects = []
+    for(let i = 0; i < 3; i++){
+        projects.push(<Project
+                active={i === this.state.active}
+                index={i}
+                rotLeft={() => this.rightRotate()}
+                rotRight={() => this.leftRotate()}
+            />
+        )
+    }
 
     return (
       <div id='Jumbotron' ref={this.ref}>
-          <div id='projects'>
+          <div id='container'>
+              {/* Recall: first 3 are projects */}
               {projects}
-        </div>
+              <About
+                  active={3 === this.state.active}
+                  rotLeft={() => this.rightRotate()}
+                  rotRight={() => this.leftRotate()}
+              />
+              <Tools
+                  active={4 === this.state.active}
+                  rotLeft={() => this.rightRotate()}
+                  rotRight={() => this.leftRotate()}
+              />
+
+          </div>
       </div>
     );
   }
