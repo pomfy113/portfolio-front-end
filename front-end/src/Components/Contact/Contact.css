@@ -1,12 +1,17 @@
 #Contact{
+    --width: 400px;
+    position: absolute;
+    right: 0;
+    top: 0;
 
     border: 1px solid lightgrey;
     border-radius: 20px;
     padding: 5px;
-    width: 400px;
+    margin: 10px;
+    width: var(--width);
     height: 150px;
     z-index: 1;
-    background-color: #fffd;
+    background-color: #fffa;
 }
 
 #Contact p{

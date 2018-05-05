@@ -16,7 +16,10 @@ export default class Project extends Component {
       }
 
       return(
-          <div className='project'>
+          <div className={`project ${this.props.active ? 'active' : 'inactive'}`}>
+              <button className="left-rot rotate" onClick={() => this.props.rotLeft()}/>
+              <button className="right-rot rotate" onClick={() => this.props.rotRight()}/>
+
               <h1>{title}</h1>
               <h2>{subtitle}</h2>
               <img alt='Project screenshot' src={`projects/project-${this.props.index}/image.png`}/>
