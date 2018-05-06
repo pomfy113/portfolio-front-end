@@ -8,7 +8,7 @@ export class About extends Component {
               <button className="left-rot rotate" onClick={() => this.props.rotLeft()}/>
               <button className="right-rot rotate" onClick={() => this.props.rotRight()}/>
               <h1>About</h1>
-              <p>Hello, my name is Ferdinand Cruz!I'm a full-stack web developer,
+              <p>Hello, my name is Ferdinand Cruz! I'm a full-stack web developer,
                   and my strengths lie in front-end web development and scripting.
                   I'm motivated by making hobbies more convenient for others!
               </p>

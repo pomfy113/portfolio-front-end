@@ -15,7 +15,7 @@ export default class Jumbotron extends Component {
       }
 
       this.ref = React.createRef();
-      this.colors = ['#85F0E6', '#FFDF8A', '#C09AFF', '#94ED93', '#FF9B92'];
+      this.colors = ['#3550A6', '#DFDF8A', '#C09AAF', '#709F4F', '#FF9B92'];
   }
 
   leftRotate(){
