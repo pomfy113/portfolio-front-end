@@ -1,4 +1,16 @@
-.project *{
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.project img{
+    width: 400px;
+    align-self: center;
+}
+
+.project h1, .project h2, .project p, .project button{
     text-shadow: 0px 0px 1px black;
 }
 
@@ -23,4 +35,26 @@
 .project p{
     font-size: 10px;
     white-space: pre-line;
+}
+
+.project .url-links{
+    text-align: right;
+    margin: 5px 0px;
+}
+
+.project button{
+    background-color: #FFFD;
+    border-radius: 15px;
+    border: none;
+    margin: 0px 5px;
+    box-sizing: border-box;
+    font-size: 10px;
+    line-height: 15px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.project button:hover{
+    cursor: pointer;
+    background-color: #DDDF;
 }

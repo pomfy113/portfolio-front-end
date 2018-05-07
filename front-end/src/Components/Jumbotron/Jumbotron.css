@@ -26,6 +26,7 @@
 
 .tab {
     position: absolute;
+
     left: calc(50% - (var(--width) / 2));
     top: calc(50% - 425px/2);
     /* top: 150px; */
@@ -33,7 +34,7 @@
     box-sizing: border-box;
 
     width: var(--width);
-    height: 425px;
+    height: 460px;
 
     box-shadow: 2px 2px 10px black;
     transition: 500ms;
@@ -44,10 +45,6 @@
 
 .tab:hover{
     opacity: 1.0;
-}
-
-.tab img{
-    width: 400px;
 }
 
 .tab:nth-child(1) {
