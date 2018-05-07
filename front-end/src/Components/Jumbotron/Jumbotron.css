@@ -28,7 +28,7 @@
     position: absolute;
 
     left: calc(50% - (var(--width) / 2));
-    top: calc(50% - 425px/2);
+    top: calc(50% - 460px/2);
     padding: 10px 20px;
     box-sizing: border-box;
 
@@ -78,7 +78,7 @@
 
 .rotate {
     position: absolute;
-
+    opacity: .7;
     top: calc(50% - 35px);
     background-color: #FFF0;
     height: 70px;
@@ -88,12 +88,14 @@
 
     transform: translateZ(var(--width)) rotate(45deg);
     z-index: 20;
+    transition: 300ms;
 }
 
 .rotate:hover{
     border-color: white;
     cursor: pointer;
-    filter: brightness(0.75);
+    filter: brightness(1.1);
+    opacity: 1.0;
 }
 
     .left-rot {
@@ -101,8 +103,7 @@
         box-shadow:
         0px 0px 0px inset black,
         10px -10px 0px inset grey,
-        20px -20px 0px inset lightgrey,
-        30px -30px 0px inset white;
+        30px -30px 0px inset lightgrey;
     }
 
     .right-rot {
@@ -110,6 +111,5 @@
 
         box-shadow:
         -10px 10px 0px inset grey,
-        -20px 20px 0px inset lightgrey,
-        -30px 30px 0px inset white;
+        -30px 30px 0px inset lightgrey;
     }
