@@ -66,6 +66,7 @@
 
 .tab:nth-child(5) {
     transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(var(--width));
+    
     background-color: #DF3B32BB;
     z-index: var(--z-1);
 }
