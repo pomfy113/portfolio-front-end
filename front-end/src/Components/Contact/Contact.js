@@ -17,7 +17,7 @@ export default class Contact extends Component {
                     <img src='contact/github.png'/>
                 </a>
                 <a href='https://www.linkedin.com/in/ferdinand-cruz113/' target='_about'>
-                    <img src='contact/LinkedIn.png'/>
+                    <img src='contact/linkedin.png'/>
                 </a>
                 <a href='mailto:cruz.ferdin@gmail.com'>
                     <img src='contact/mail.png'/>
