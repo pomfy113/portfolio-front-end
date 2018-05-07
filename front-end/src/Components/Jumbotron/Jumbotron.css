@@ -29,7 +29,6 @@
 
     left: calc(50% - (var(--width) / 2));
     top: calc(50% - 425px/2);
-    /* top: 150px; */
     padding: 10px 20px;
     box-sizing: border-box;
 
@@ -73,14 +72,11 @@
 
 .tab:nth-child(5) {
     transform: rotateY(calc(var(--rotate) - 72deg)) translateZ(var(--width));
-
     background-color: #DF3B32BB;
     z-index: var(--z-1);
 }
 
-/* Rotate buttons */
 .rotate {
-    /* display: none; */
     position: absolute;
 
     top: calc(50% - 35px);
@@ -89,7 +85,6 @@
     width: 70px;
     color: black;
     border: none;
-    /* border-radius: 50%; */
 
     transform: translateZ(var(--width)) rotate(45deg);
     z-index: 20;
