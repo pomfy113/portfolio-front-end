@@ -9,20 +9,19 @@ export default class Project extends Component {
   }
 
   render() {
-      let title, subtitle;
+      let title, subtitle, tools;
       if(this.projectData){
           title = this.projectData.title;
           subtitle = this.projectData.subtitle;
+          tools = this.projectData.tools
       }
 
       return(
           <div className={`tab project ${this.props.active ? 'active' : 'inactive'}`}>
-              <button className="left-rot rotate" onClick={() => this.props.rotLeft()}/>
-              <button className="right-rot rotate" onClick={() => this.props.rotRight()}/>
-
               <h1>{title}</h1>
               <h2>{subtitle}</h2>
               <img alt='Project screenshot' src={`projects/project-${this.props.index}/image.png`}/>
+              <p>Tools:<br/>{tools}</p>
           </div>
       )
   }

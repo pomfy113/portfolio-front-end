@@ -82,6 +82,8 @@ export default class Jumbotron extends Component {
 
     return (
       <div id='Jumbotron' ref={this.ref}>
+          <button className="left-rot rotate" onClick={() => this.rightRotate()}/>
+          <button className="right-rot rotate" onClick={() => this.leftRotate()}/>
           <div id='container'>
               {/* Recall: first 3 are projects */}
               {projects}
