@@ -44,31 +44,28 @@ export class Tools extends Component {
                       <td>Python, React, CSS3, debugging</td>
                   </tr>
                   <tr>
-                      <td>Web Tech</td>
-                      <td>Node.js, Express, REST, MVC/MVVC, UX Design & Testing,
-                      Authentication (JWT, Bcrypt), Flask, AJAX</td>
+                      <td>Web</td>
+                      <td>Node.js, Express, Flask, REST & MVC/MVVC Architecture</td>
                   </tr>
                   <tr>
                       <td>Languages</td>
-                      <td>Javascript (JSX, ES6), CSS3, Python, HTML, Sass, C, C++, R</td>
+                      <td>Javascript (JSX, ES7), CSS3, Python, HTML, Sass, C, C++, R</td>
                   </tr>
                   <tr>
                       <td>Databases</td>
-                      <td>MongoDB, SQL (Postgres + Sequelize), GraphQL (basic)</td>
+                      <td>MongoDB, SQL (Postgres + Sequelize), GraphQL</td>
                   </tr>
                   <tr>
                       <td>Libraries</td>
-                      <td>React, Redux, React Native, jQuery, Bootstrap</td>
+                      <td>React, Redux, jQuery, Jest, Angular, Bootstrap, Mocha/Chai, React Native</td>
                   </tr>
                   <tr>
                       <td>Tools</td>
-                      <td>Git, Github, bash, GIMP, Maya, Heroku, Trello, Slack,
-                          iMovie, AWS</td>
+                      <td>Git, Github, Bitbucket, Unix, GIMP/Photoshop, Maya, Heroku, Trello, Slack, iMovie, AWS</td>
                   </tr>
                   <tr>
                       <td>Comp Sci & Misc</td>
-                      <td>Object Oriented Programming, Data Structures, 3D Modeling & Animation,
-                          Assembly Language</td>
+                      <td>Object Oriented Programming, Data Structures, 3D Modeling & Animation, UX Design & Testing</td>
                   </tr>
                   </tbody>
               </table>
